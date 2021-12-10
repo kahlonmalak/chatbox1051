@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-43wv#jov@g-rh5v)))jk#y(=ir))_wd^t0n)+=c^zikk3@!-sn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -82,7 +82,21 @@ DATABASES = {
         'NAME': str(os.path.join(BASE_DIR, "db.sqlite3"))
     }
 }
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': '',
+#         'USER': 'root',
+#         # 'HOST': 'mariadb55',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3302',
+#         'PASSWORD': '',
+#         'default-character-set': 'utf8',
+#         'OPTIONS': {
+#             'sql_mode': 'traditional',
+#         }
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
